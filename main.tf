@@ -42,7 +42,7 @@ resource "aws_iam_role_policy_attachment" "lambda_basic" {
 }
 
 # Lambda 함수 생성
-resource "aws_lambda_function" "demo_lambda" {
+resource "aws_lambda_function" "demo_lambda2" {
   function_name    = "atlantis-poc-lambda"
   role             = aws_iam_role.lambda_exec.arn
   handler          = "lambda_function.lambda_handler"
